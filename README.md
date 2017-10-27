@@ -1,3 +1,39 @@
+# MyYouTube Playlist 
+
+Job ID :
+
+JIRA : 
+
+Server : http://localhost:8000/
+
+GIT: https://github.com/imardones/MyYouTubePlaylist
+
+
+## Build requirements
+
+To build and run the site locally, you'll need:
+
+* Node.js
+* Gulp
+* Sass
+* Angular
+* Ionic
+
+## Installation
+
+`npm install` for node_modules
+
+`packages.json` must be filled correctly by Developers
+
+`ionic server` to start developemt 
+
+
+
+===============================================
+
+
+
+
 This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
 
 ## How to use this template
