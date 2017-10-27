@@ -28,8 +28,10 @@ export class ListPage {
     this.months = "JanFebMarAprMayJunJulAugSepOctNovDec";
     this.videoCount = this.videos.length - 1;
 
-    //truncating the description if it's longer than the characterLimit
+    // Looping through the json feed and repacking the entries
     for(let i = 0; i < this.videoCount; i++) {
+
+      //truncating the description if it's longer than the characterLimit
       this.description = this.videos[i].snippet.description;
       if ( this.description.length > this.characterLimit ) {
         this.trucateDescription = this.description.substring(0,this.characterLimit).concat("...");
