@@ -14,7 +14,7 @@ GIT: https://github.com/imardones/MyYouTubePlaylist
 To build and run the site locally, you'll need:
 
 * Node.js
-* Gulp
+* Cordova
 * Sass
 * Angular
 * Ionic
@@ -23,9 +23,16 @@ To build and run the site locally, you'll need:
 
 `npm install` for node_modules
 
+`npm install -l @angular/cli` to install angular locally 
+
+`sudo npm install -l cordova` to install cordova locally 
+
+`sudo npm install -l ionic` to install ionic locally 
+
 `packages.json` must be filled correctly by Developers
 
 `ionic server` to start developemt 
+
 
 
 
