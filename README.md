@@ -36,9 +36,9 @@ To build and run the site locally, you'll need:
 
 Then, to run it, cd into `MyYouTubePlaylist` and run:
 
-bash
-ionic cordova platform add ios
-ionic cordova run ios
+`bash`  
+`ionic cordova platform add ios`  
+`ionic cordova run ios`  
 
 Substitute ios for android if not on a Mac.
 
