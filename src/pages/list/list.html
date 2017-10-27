@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>My YouTube Playlist</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
+      <ion-card>
+        <ion-thumbnail item-start item-left class="thumbnailHigh" >
+            <img src="{{item.thumbnailHigh}}" width="100%" height="100%" >
+        </ion-thumbnail>
+        <ion-card class="text-left videoInfo item-text-wrap">
+          <h5 class="card-title item-text-wrap">{{item.title}}</h5>
+          <p text-left class="card-date item-text-wrap">Published on {{item.month}} {{item.day}}, {{item.year}}</p>
+          <ion-thumbnail item-start item-left class="thumbnailMedium" >
+              <img src="{{item.thumbnailMedium}}"  width="100%" height="100%">
+          </ion-thumbnail>
+          <ion-card-content>
+          <ion-item item-text-wrap class="description text-left item-text-wrap">{{item.trucatedDescription}}</ion-item>
+          </ion-card-content>
+        </ion-card>
+      </ion-card>
+    </button>
+  </ion-list>
+</ion-content>

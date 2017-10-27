@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle *ngIf="!selectedItem">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Back to list of videos</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-item>
+      <h2 class="card-title">{{selectedItem.title}}</h2>
+      <p class="card-date">Published on {{selectedItem.month}} {{selectedItem.day}}, {{selectedItem.year}}</p>
+    </ion-item>
+    <div class="colwrapper">
+      <div class="videoWrapper">
+        <iframe class="e2e-iframe-untrusted-src" [src]="selectedItem.scrURL"  frameborder="0" width="854" height="480" allowfullscreen></iframe>
+      </div>
+      <ion-card-content class="description">
+        <p>{{selectedItem.description}}</p>
+      </ion-card-content>
+    </div>
+  </ion-card>
+
+</ion-content>

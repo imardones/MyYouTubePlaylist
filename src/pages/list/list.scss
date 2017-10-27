@@ -1,0 +1,99 @@
+page-list {
+
+  .card-title {
+    font-size: 2em;
+    font-weight: bold;
+    word-break:break-all;
+  }
+  .card-date {
+    color: #999;
+    font-weight: bold;
+    padding: 20px 0;
+  }
+  .description p {
+    font-size: 1.6em;
+    white-space: normal;
+    word-wrap: normal;
+  }
+
+  .videoInfo {
+    width: 50%;
+    display: flex;
+    float: left;
+    flex-direction: column;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    text-overflow: inherit;
+    width: calc(60% - 40px);
+    box-shadow: none;
+    padding: 0 15px;
+    margin: 0;
+  }
+
+  .item-md {
+    padding-left: 0;
+  }
+  .card-content-md {
+    padding: 0;
+  }
+
+  @media (max-width: 481px) {
+
+    .card-title {
+      font-size: 1.5em;
+      padding: 15px 15px 0 15px;
+    }
+    .card-date {
+      color: #999;
+      padding: 5px 15px 0;
+    }
+    .videoInfo {
+      width: calc(100% );
+      padding: 0;
+      margin: 0;
+    }
+    .description, .thumbnailHigh, .thumbnailHigh img, .card-content.card-content-md {
+      display: none;
+    }
+    .item-md ion-avatar[item-left], .item-md ion-thumbnail[item-left], .item-md ion-avatar[item-start], .item-md ion-thumbnail[item-start] {
+      margin: 8px 0 0 0;
+    }
+    .thumbnailMedium, .thumbnailMedium img {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  @media (min-width: 481px) {
+    .card-title {
+      font-size: 1.6em;
+    }
+    .thumbnailHigh {
+      max-width: 40%;
+    }
+    .videoInfo {
+      padding: 20px 0 0 0;
+      margin: 0;
+    }
+    .item-md ion-avatar[item-left], .item-md ion-thumbnail[item-left], .item-md ion-avatar[item-start], .item-md ion-thumbnail[item-start] {
+        margin: 20px;
+    }
+    .thumbnailHigh, .thumbnailHigh img {
+      display: block;
+      width: 100%;
+      height: auto;
+      float: left;
+    }
+    .thumbnailMedium {
+      display: none;
+    }
+  }
+
+}
